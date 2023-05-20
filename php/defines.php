@@ -16,9 +16,8 @@ function connectTo() {
  Does -> Connects to data base
  Returns -> Connection object
 */
-$con = mysqli_init(); mysqli_ssl_set($con,NULL,NULL,"C:\Demo\DigiCertGlobalRootCA.crt.pem", NULL, NULL);
-  mysqli_real_connect($conn, "mysqlsatabaseserver.mysql.database.azure.com", "cjysvvmurf", "Stuedent@54321", "attendance", 3306, MYSQLI_CLIENT_SSL);
- // $con = new mysqli(DB_HOST,DB_USER,DB_PASS,DB_DB);
+//text
+  $con = new mysqli(DB_HOST,DB_USER,DB_PASS,DB_DB);
   return $con;   
 }
 function sqlReady($input) {
