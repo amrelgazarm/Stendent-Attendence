@@ -1,7 +1,7 @@
 <?php
-DEFINE('DB_USER','root');
+DEFINE('DB_USER','cjysvvmurf');
 DEFINE('DB_PASS','Student@54321');
-DEFINE('DB_HOST','localhost');
+DEFINE('DB_HOST','mysqlsatabaseserver.mysql.database.azure.com');
 DEFINE('DB_DB','attendance');
 DEFINE('EMAIL',1);
 DEFINE('PHONE',2);
