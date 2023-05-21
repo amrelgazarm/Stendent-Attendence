@@ -1,2 +1,2 @@
-# Stendent-Attendence
- Cloud computing project
+# StudentAttendance
+ CLoud Project

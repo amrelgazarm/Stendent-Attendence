@@ -1,7 +1,7 @@
 <?php
-DEFINE('DB_USER','dtthiggine');
+DEFINE('DB_USER','root');
 DEFINE('DB_PASS','Student@54321');
-DEFINE('DB_HOST','attendance-db-n-server.mysql.database.azure.com');
+DEFINE('DB_HOST','localhost');
 DEFINE('DB_DB','attendance');
 DEFINE('EMAIL',1);
 DEFINE('PHONE',2);
@@ -11,19 +11,12 @@ DEFINE('NAME',5);
 DEFINE('NUMBER',6);
 
 
-<? echo 'ok';?>
-
 function connectTo() {
 /*
  Does -> Connects to data base
  Returns -> Connection object
 */
-//text
-
-$con = mysqli_init();
-mysqli_ssl_set($con,NULL,NULL, "C:\Users\Student1\Documents\GitHub\Stendent-Attendence\DigiCertGlobalRootCA.crt.pem", NULL, NULL);
- //mysqli_real_connect($conn, "attendance-db-n-server.mysql.database.azure.com", "dtthiggine", "{your_password}", "{your_database}", 3306, MYSQLI_CLIENT_SSL);
-  $con = new mysqli(DB_HOST,DB_USER,DB_PASS,DB_DB,3306,MYSQLI_CLIENT_SSL);
+  $con = new mysqli(DB_HOST,DB_USER,DB_PASS,DB_DB);
   return $con;   
 }
 function sqlReady($input) {
