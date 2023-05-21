@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'StudenFinalAttendWebAP'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5E3C177728854DF5929FDE206977B3C3 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_77DF1DBF0E324FAE9A6B9F266526D1DB }}
           package: .
