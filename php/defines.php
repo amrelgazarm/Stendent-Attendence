@@ -21,8 +21,8 @@ function connectTo() {
 //text
 
 $con = mysqli_init();
-mysqli_ssl_set($con,NULL,NULL,"C:\Users\Student1\Documents\GitHub\Stendent-Attendence\DigiCertGlobalRootCA.crt.pem",NULL,NULL);
-//mysqli_real_connect($conn, "attendance-db-n-server.mysql.database.azure.com", "dtthiggine", "{your_password}", "{your_database}", 3306, MYSQLI_CLIENT_SSL);
+mysqli_ssl_set($con,NULL,NULL, "C:\Users\Student1\Documents\GitHub\Stendent-Attendence\DigiCertGlobalRootCA.crt.pem", NULL, NULL);
+ //mysqli_real_connect($conn, "attendance-db-n-server.mysql.database.azure.com", "dtthiggine", "{your_password}", "{your_database}", 3306, MYSQLI_CLIENT_SSL);
   $con = new mysqli(DB_HOST,DB_USER,DB_PASS,DB_DB,3306,MYSQLI_CLIENT_SSL);
   return $con;   
 }
