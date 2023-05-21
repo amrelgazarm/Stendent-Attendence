@@ -1,7 +1,7 @@
 <?php
-DEFINE('DB_USER','cjysvvmurf');
+DEFINE('DB_USER','dtthiggine');
 DEFINE('DB_PASS','Student@54321');
-DEFINE('DB_HOST','mysqlsatabaseserver.mysql.database.azure.com');
+DEFINE('DB_HOST','attendance-db-n-server.mysql.database.azure.com');
 DEFINE('DB_DB','attendance');
 DEFINE('EMAIL',1);
 DEFINE('PHONE',2);
@@ -10,6 +10,8 @@ DEFINE('CODE',4);
 DEFINE('NAME',5);
 DEFINE('NUMBER',6);
 
+
+<? echo 'ok';?>
 
 function connectTo() {
 /*
